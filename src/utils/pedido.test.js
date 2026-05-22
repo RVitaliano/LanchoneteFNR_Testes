@@ -27,8 +27,8 @@ const resultado = validarPedido('', [{ id: 1 }])
 expect(resultado).toBe('Informe o nome do cliente.')
 })
 it('retorna erro quando nao ha itens', () => {
-const resultado = validarPedido('', []) // Deixar o nome em branco causa erro para exemplo
-expect(resultado).toBe('Adicione pelo menos um item.')
+const resultado = validarPedido('Ana Lima', [])
+expect(resultado).toBe('Adicione pelo menos um item. ERRO PROPOSITAL') // falha de propósito
 })
 it('retorna null quando pedido esta correto', () => {
 const itens = [{ id: 1, nome: 'X-Burguer', preco: 18.5, quantidade: 1 }]
