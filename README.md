@@ -110,11 +110,3 @@ fnr_26/
 ├── package.json
 └── vite.config.js
 ```
-
----
-
-## 👤 Autor dos testes
-
-**Roberto Vitaliano**  
-Matrícula: 202411011151  
-Faculdade Nova Roma — Disciplina de Testes de Software
