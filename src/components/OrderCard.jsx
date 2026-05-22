@@ -26,6 +26,7 @@ export default function OrderCard({ pedido, onRefresh }) {
     } finally {
       setLoading(false)
     }
+    onRefresh()
   }
 
   const handleDelete = async () => {
