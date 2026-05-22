@@ -32,7 +32,7 @@ Este repositório inclui os **testes unitários** desenvolvidos como parte da di
 git clone https://github.com/RVitaliano/LanchoneteFNR_Testes
 
 # 2. Entre na pasta
-cd fnr_26
+cd LanchoneteFNR_Testes
 
 # 3. Instale as dependências
 npm install
@@ -77,22 +77,24 @@ npm install -D vitest
 npx vitest run
 ```
 
-### Resultado esperado
+### Resultado dos testes
 
 ```
-✓ src/utils/pedido.test.js (6 tests)
+❯ src/utils/pedido.test.js (6 tests | 1 failed)
   ✓ calcularTotal (3)
     ✓ retorna 0 para lista vazia
     ✓ calcula corretamente com um item
     ✓ calcula corretamente com varios itens
-  ✓ validarPedido (3)
+  ❯ validarPedido (3)
     ✓ retorna erro quando nome esta vazio
-    ✓ retorna erro quando nao ha itens
+    × retorna erro quando nao ha itens   ← falha proposital
     ✓ retorna null quando pedido esta correto
 
-Test Files  1 passed (1)
-     Tests  6 passed (6)
+Test Files  1 failed (1)
+     Tests  1 failed | 5 passed (6)
 ```
+
+> ⚠️ O teste `retorna erro quando nao ha itens` falha **propositalmente** para demonstrar o comportamento do Vitest ao identificar uma falha. O valor esperado foi definido incorretamente de forma intencional como parte do exercício da disciplina.
 
 ---
 
