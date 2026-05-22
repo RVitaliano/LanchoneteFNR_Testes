@@ -29,7 +29,7 @@ Este repositório inclui os **testes unitários** desenvolvidos como parte da di
 
 ```bash
 # 1. Clone o repositório
-git clone https://github.com/SEU_USUARIO/fnr_26
+git clone https://github.com/RVitaliano/LanchoneteFNR_Testes
 
 # 2. Entre na pasta
 cd fnr_26
